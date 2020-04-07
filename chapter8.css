@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main {
+	margin: 50px auto;
+	width: 960px;
+}
+
+.list {
+	list-style: none;
+	margin-bottom: 50px;
+}
+
+.list-item {
+	padding: 20px;
+}
+
+.list-item:nth-child(odd) {
+	background-color: grey;
+}
+
+.box {
+	background-color: yellow;
+	height: 200px;
+	width: 30%;
+	float: left;
+}
+
+.box:first-child,
+.box:last-child,
+.box:nth-child(5){
+	background-color: orange
+}
+
+.box:first-child,
+.box:nth-child(4),
+.box:nth-child(7){
+	margin-right: 5%;
+}
+
+.box:nth-child(2),
+.box:nth-child(5),
+.box:nth-child(8){
+	margin-right: 5%;
+}
+
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6){
+	margin-bottom: 5%;
+}
